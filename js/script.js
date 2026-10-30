@@ -250,7 +250,7 @@ function setupFX(){
   let n = 0;
   h1.innerHTML = name.split(" ").map(w=>`<span class="w" aria-hidden="true">${[...w].map(ch=>`<span class="ch" style="--i:${n++}">${ch}</span>`).join("")}</span>`).join(" ");
   // Teks mengetik bergantian
-  const rot = $("#rot"), words = ["data management","data verification","system analysis","web development"];
+  const rot = $("#rot"), words = ["data management","data verification","project management","system analyst","web development"];
   let w = 0, i = 0, del = false;
   (function tick(){
     const word = words[w]; rot.textContent = word.slice(0,i); let d = del?35:70;
